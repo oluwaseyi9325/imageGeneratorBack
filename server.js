@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: true, limit: "100mb" }));
 app.use(morgan("dev"))
 app.use(helmet());
 app.use(cors({
-    origin:"https://image-s.vercel.app/",
+    origin:"*",
     methods:["GET","POST"]
 }));
 
